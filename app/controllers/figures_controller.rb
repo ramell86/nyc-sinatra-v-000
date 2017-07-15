@@ -31,4 +31,9 @@ class FiguresController < ApplicationController
         redirect to "/figures/#{@figure.id}"
     end
 
+    get '/figures/edit' do
+
+        erb :"/figures/#{@figure.id}"
+    end
+
 end
